@@ -101,7 +101,7 @@
  * SMOOTHIEWARE
  * REPETIER
  */
-#define DEFAULT_FW UNKNOWN_FW
+#define DEFAULT_FW MARLIN
 
 /************************************
  *
