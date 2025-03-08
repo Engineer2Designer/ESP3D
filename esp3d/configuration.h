@@ -126,7 +126,7 @@
 /* Use Ethernet
  * Enable ethernet communications
  */
-// #define ETH_FEATURE
+#define ETH_FEATURE
 
 // Ethernet type (Check ETH.h eth_phy_type_t)
 // TYPE_ETH_PHY_LAN8720
@@ -137,28 +137,28 @@
 // TYPE_ETH_PHY_KSZ8041
 // TYPE_ETH_PHY_KSZ8081
 // TYPE_ETH_PHY_W5500
-#define ESP3D_ETH_PHY_TYPE TYPE_ETH_PHY_W5500
+#define ESP3D_ETH_PHY_TYPE TYPE_ETH_PHY_LAN8720
 
 // Ethernet board Clock mode
 //  MODE_ETH_CLOCK_GPIO0_IN
 //  MODE_ETH_CLOCK_GPIO0_OUT
 //  MODE_ETH_CLOCK_GPIO16_OUT
 //  MODE_ETH_CLOCK_GPIO17_OUT
-//#define ESP3D_ETH_CLK_MODE MODE_ETH_CLOCK_GPIO0_IN
+#define ESP3D_ETH_CLK_MODE MODE_ETH_CLOCK_GPIO17_OUT
 
 // Pins of ethernet board
-//#define ESP3D_ETH_PHY_POWER_PIN 16
-//#define ESP3D_ETH_PHY_MDC_PIN 23
-//#define ESP3D_ETH_PHY_MDIO_PIN 18
+#define ESP3D_ETH_PHY_POWER_PIN -1
+#define ESP3D_ETH_PHY_MDC_PIN 23
+#define ESP3D_ETH_PHY_MDIO_PIN 18
 // These are the pins for the W5500 chip using SPI
-#define ETHERNET_SPI_USE_SPI 1
-#define ETHERNET_SPI_USE_SPI2 0
-#define ETH_SPI_SCK  18
-#define ETH_SPI_MISO 23
-#define ETH_SPI_MOSI 19
-#define ETH_PHY_CS 5
-#define ETH_PHY_IRQ -1
-#define ETH_PHY_RST 4
+// #define ETHERNET_SPI_USE_SPI 1
+// #define ETHERNET_SPI_USE_SPI2 0
+// #define ETH_SPI_SCK  18
+// #define ETH_SPI_MISO 19
+// #define ETH_SPI_MOSI 23
+// #define ETH_PHY_CS 5
+// #define ETH_PHY_IRQ -1
+//  #define ETH_PHY_RST 4
 
 // Address of ethernet board
 #define ESP3D_ETH_PHY_ADDR 1
@@ -300,14 +300,14 @@
  * ESP_SHARED_SD //Printer SD Card is also connected to ESP3D
  * Does your system has SD card and how it is connected to your ESP3D
  */
- //#define SD_DEVICE_CONNECTION ESP_NOT_SHARED_SD
+//#define SD_DEVICE_CONNECTION ESP_NOT_SHARED_SD
 
 /* SD card library
  * ESP_SD_NATIVE //esp32 / esp8266
  * ESP_SDIO      //esp32 only
  * ESP_SDFAT2    //esp8266  / esp32
  */
- //#define SD_DEVICE ESP_SDFAT2
+//#define SD_DEVICE ESP_SDFAT2
 
 
 // #define SD_CARD_TYPE ESP_FYSETC_WIFI_PRO_SDCARD
