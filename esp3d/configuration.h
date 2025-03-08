@@ -126,7 +126,7 @@
 /* Use Ethernet
  * Enable ethernet communications
  */
-// #define ETH_FEATURE
+#define ETH_FEATURE
 
 // Ethernet type (Check ETH.h eth_phy_type_t)
 // TYPE_ETH_PHY_LAN8720
@@ -154,8 +154,8 @@
 #define ETHERNET_SPI_USE_SPI 1
 #define ETHERNET_SPI_USE_SPI2 0
 #define ETH_SPI_SCK  18
-#define ETH_SPI_MISO 23
-#define ETH_SPI_MOSI 19
+#define ETH_SPI_MISO 19
+#define ETH_SPI_MOSI 23
 #define ETH_PHY_CS 5
 #define ETH_PHY_IRQ -1
 #define ETH_PHY_RST 4
@@ -300,14 +300,14 @@
  * ESP_SHARED_SD //Printer SD Card is also connected to ESP3D
  * Does your system has SD card and how it is connected to your ESP3D
  */
- //#define SD_DEVICE_CONNECTION ESP_NOT_SHARED_SD
+//#define SD_DEVICE_CONNECTION ESP_NOT_SHARED_SD
 
 /* SD card library
  * ESP_SD_NATIVE //esp32 / esp8266
  * ESP_SDIO      //esp32 only
  * ESP_SDFAT2    //esp8266  / esp32
  */
- //#define SD_DEVICE ESP_SDFAT2
+//#define SD_DEVICE ESP_SDFAT2
 
 
 // #define SD_CARD_TYPE ESP_FYSETC_WIFI_PRO_SDCARD
