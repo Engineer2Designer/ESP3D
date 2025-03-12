@@ -191,7 +191,7 @@
 #define DISABLE_TELNET_WELCOME_MESSAGE
 
 /* Use Websocket server
- * Enable websocket communications
+ * Enable websocket communications 
  */
 // #define WS_DATA_FEATURE
 
@@ -300,14 +300,14 @@
  * ESP_SHARED_SD //Printer SD Card is also connected to ESP3D
  * Does your system has SD card and how it is connected to your ESP3D
  */
-//#define SD_DEVICE_CONNECTION ESP_NOT_SHARED_SD
+#define SD_DEVICE_CONNECTION ESP_NOT_SHARED_SD
 
 /* SD card library
  * ESP_SD_NATIVE //esp32 / esp8266
  * ESP_SDIO      //esp32 only
  * ESP_SDFAT2    //esp8266  / esp32
  */
-//#define SD_DEVICE ESP_SDFAT2
+#define SD_DEVICE ESP_SDFAT2
 
 
 // #define SD_CARD_TYPE ESP_FYSETC_WIFI_PRO_SDCARD
@@ -353,10 +353,10 @@
 /* SD card CS pin
  * The pin used to select SD card in SPI mode
  */
- //#define ESP_SD_CS_PIN 21
- //#define ESP_SD_MISO_PIN 8
- //#define ESP_SD_MOSI_PIN 9
- //#define ESP_SD_SCK_PIN  7
+ #define ESP_SD_CS_PIN 15
+ #define ESP_SD_MISO_PIN 19
+ #define ESP_SD_MOSI_PIN 23
+ #define ESP_SD_SCK_PIN  18
  //#define ESP_SDIO_CMD_PIN 38
  //#define ESP_SDIO_D0_PIN 40
  //#define ESP_SDIO_CLK_PIN 39
