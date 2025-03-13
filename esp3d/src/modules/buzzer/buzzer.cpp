@@ -54,8 +54,7 @@ bool BuzzerDevice::begin() {
     end();
   }
 #if defined(ARDUINO_ARCH_ESP32)
-  setToneChannel(0);
-  ledcSetup(0, 12000, 8);
+  ledcAttachChannel(0, 12000, 8,0);
 #endif  // defined(ARDUINO_ARCH_ESP32)
   if (ESP3DSettings::readByte(ESP_BUZZER) == 1) {
     _started = true;

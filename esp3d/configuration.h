@@ -156,9 +156,9 @@
 #define ETH_SPI_SCK  18
 #define ETH_SPI_MISO 19
 #define ETH_SPI_MOSI 23
-#define ETH_PHY_CS 5
+#define ETH_PHY_CS 26
 #define ETH_PHY_IRQ -1
-#define ETH_PHY_RST 4
+#define ETH_PHY_RST 27
 
 // Address of ethernet board
 #define ESP3D_ETH_PHY_ADDR 1
@@ -353,13 +353,13 @@
 /* SD card CS pin
  * The pin used to select SD card in SPI mode
  */
- #define ESP_SD_CS_PIN 15
+ #define ESP_SD_CS_PIN 5
  #define ESP_SD_MISO_PIN 19
  #define ESP_SD_MOSI_PIN 23
  #define ESP_SD_SCK_PIN  18
  //#define ESP_SDIO_CMD_PIN 38
  //#define ESP_SDIO_D0_PIN 40
- //#define ESP_SDIO_CLK_PIN 39
+ //#define ESP_SDIO_CLK_PIN 39  
 
 /************************************
  *
@@ -487,12 +487,12 @@
 /* Enable buzzer
  * Your esp board has a passive buzzer
  */
-// #define BUZZER_DEVICE
+#define BUZZER_DEVICE
 
 /* Buzzer pin
  * The pin used for the passive buzzer
  */
-// #define ESP3D_BUZZER_PIN 33
+#define ESP3D_BUZZER_PIN 4
 
 /************************************
  *
