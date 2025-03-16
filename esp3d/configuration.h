@@ -87,7 +87,7 @@
  * USE_SERIAL_2 //for ESP32 Only\
  * Comment if not used
  */
-// #define ESP_SERIAL_BRIDGE_OUTPUT USE_SERIAL_1
+#define ESP_SERIAL_BRIDGE_OUTPUT USE_SERIAL_1
 
 /* Serial buffer size
  *  Maximum size of the serial buffer
@@ -193,7 +193,7 @@
 /* Use Websocket server
  * Enable websocket communications 
  */
-// #define WS_DATA_FEATURE
+#define WS_DATA_FEATURE
 
 // Enable notifications
 // Allows to send notifications to the user
@@ -372,7 +372,7 @@
 /* Enable global filesystem
  * Allows to access to all filesystems from same location
  */
-//#define GLOBAL_FILESYSTEM_FEATURE
+#define GLOBAL_FILESYSTEM_FEATURE
 
 /* WebDav access
  * Use WebDav to access to your filesystem
@@ -380,7 +380,7 @@
  * FS_FLASH       //mount Flash FS
  * FS_SD          mount SD FS
  */
-//#define WEBDAV_FEATURE FS_ROOT
+#define WEBDAV_FEATURE FS_ROOT
 
 /* FTP access
  * Use FTP to access to your filesystem (1 connection only)
@@ -388,7 +388,7 @@
  * FS_FLASH       //mount Flash FS
  * FS_SD          //mount SD FS
  */
-// #define FTP_FEATURE FS_ROOT
+#define FTP_FEATURE FS_ROOT
 
 /************************************
  *
@@ -430,7 +430,7 @@
 /* Enable SD card Update
  * Update firmware and settings using file on SDCard
  */
-// #define SD_UPDATE_FEATURE
+#define SD_UPDATE_FEATURE
 
 /************************************
  *
@@ -615,7 +615,7 @@
 /* Enable lua interpreter
  * Allow to use lua interpreter on ESP3D on ESP32/S2/S3/C3 only
  */
-//#define ESP_LUA_INTERPRETER_FEATURE
+#define ESP_LUA_INTERPRETER_FEATURE
 
 /* Hook when got IP
  * Commands to run on event
