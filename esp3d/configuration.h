@@ -92,7 +92,7 @@
 /* Serial buffer size
  *  Maximum size of the serial buffer
  */
-#define SERIAL_RX_BUFFER_SIZE 512
+#define SERIAL_RX_BUFFER_SIZE 1024
 
 /************************************
  *
@@ -108,7 +108,7 @@
  * SMOOTHIEWARE
  * REPETIER
  */
-#define DEFAULT_FW UNKNOWN_FW
+#define DEFAULT_FW MARLIN
 
 /************************************
  *
@@ -193,7 +193,7 @@
 /* Use Websocket server
  * Enable websocket communications
  */
-// #define WS_DATA_FEATURE
+#define WS_DATA_FEATURE
 
 // Enable notifications
 // Allows to send notifications to the user
@@ -243,7 +243,7 @@
 /* Model name
  * Modele name of device
  */
-#define ESP_MODEL_NAME "ESP Board"
+#define ESP_MODEL_NAME "E2D Board"
 
 /* Model number
  * Modele number of device
@@ -253,17 +253,17 @@
 /* Model url
  * Modele url of device
  */
-#define ESP_MODEL_URL "https://www.espressif.com/en/products/devkits"
+#define ESP_MODEL_URL "https://e2d.tw/product/i3al"
 
 /* Manufacturer name
  * Manufacturer name of device
  */
-#define ESP_MANUFACTURER_NAME "Espressif Systems"
+#define ESP_MANUFACTURER_NAME "E2D Systems"
 
 /* Manufacturer url
  * Manufacturer url of device
  */
-#define ESP_MANUFACTURER_URL "https://www.espressif.com"
+#define ESP_MANUFACTURER_URL "https://www.e2d.tw"
 
 /************************************
  *
@@ -300,14 +300,14 @@
  * ESP_SHARED_SD //Printer SD Card is also connected to ESP3D
  * Does your system has SD card and how it is connected to your ESP3D
  */
- //#define SD_DEVICE_CONNECTION ESP_NOT_SHARED_SD
+ #define SD_DEVICE_CONNECTION ESP_NOT_SHARED_SD
 
 /* SD card library
  * ESP_SD_NATIVE //esp32 / esp8266
  * ESP_SDIO      //esp32 only
  * ESP_SDFAT2    //esp8266  / esp32
  */
- //#define SD_DEVICE ESP_SDFAT2
+ #define SD_DEVICE ESP_SDIO
 
 
 // #define SD_CARD_TYPE ESP_FYSETC_WIFI_PRO_SDCARD
@@ -317,12 +317,12 @@
  * SD_ONE_BIT_MODE
  * SD_FOUR_BIT_MODE
  */
- //#define SDIO_BIT_MODE SD_ONE_BIT_MODE
+ #define SDIO_BIT_MODE SD_FOUR_BIT_MODE
 
 /* Enable date/time on files
  * Set date/time on files using SNTP or last webui connection
  */
-// #define SD_TIMESTAMP_FEATURE
+#define SD_TIMESTAMP_FEATURE
 
 /************************************
  *
@@ -372,7 +372,7 @@
 /* Enable global filesystem
  * Allows to access to all filesystems from same location
  */
-//#define GLOBAL_FILESYSTEM_FEATURE
+#define GLOBAL_FILESYSTEM_FEATURE
 
 /* WebDav access
  * Use WebDav to access to your filesystem
@@ -380,7 +380,7 @@
  * FS_FLASH       //mount Flash FS
  * FS_SD          mount SD FS
  */
-//#define WEBDAV_FEATURE FS_ROOT
+#define WEBDAV_FEATURE FS_ROOT
 
 /* FTP access
  * Use FTP to access to your filesystem (1 connection only)
@@ -388,7 +388,7 @@
  * FS_FLASH       //mount Flash FS
  * FS_SD          //mount SD FS
  */
-// #define FTP_FEATURE FS_ROOT
+#define FTP_FEATURE FS_ROOT
 
 /************************************
  *
@@ -430,7 +430,7 @@
 /* Enable SD card Update
  * Update firmware and settings using file on SDCard
  */
-// #define SD_UPDATE_FEATURE
+#define SD_UPDATE_FEATURE
 
 /************************************
  *
@@ -487,12 +487,12 @@
 /* Enable buzzer
  * Your esp board has a passive buzzer
  */
-// #define BUZZER_DEVICE
+#define BUZZER_DEVICE
 
 /* Buzzer pin
  * The pin used for the passive buzzer
  */
-// #define ESP3D_BUZZER_PIN 33
+#define ESP3D_BUZZER_PIN 12
 
 /************************************
  *
@@ -545,17 +545,18 @@
  * CAMERA_MODEL_XIAO_ESP32S3  
  * Camera connected to ESP board, only ones with PSRAM are supported
  */
-// #define CAMERA_DEVICE CAMERA_MODEL_XIAO_ESP32S3
+#define CAMERA_DEVICE CAMERA_MODEL_AI_THINKER
 
 /* Flip vertically
  * Flip camera vertically
  */
-// #define CAMERA_DEVICE_FLIP_VERTICALY
+#define CAMERA_DEVICE_FLIP_VERTICALY
 
 /* Flip horizontally
  * Flip camera horizontally
  */
-// #define CAMERA_DEVICE_FLIP_HORIZONTALY
+#define CAMERA_DEVICE_FLIP_HORIZONTALY
+
 
 /************************************
  *
@@ -615,7 +616,7 @@
 /* Enable lua interpreter
  * Allow to use lua interpreter on ESP3D on ESP32/S2/S3/C3 only
  */
-//#define ESP_LUA_INTERPRETER_FEATURE
+#define ESP_LUA_INTERPRETER_FEATURE
 
 /* Hook when got IP
  * Commands to run on event
