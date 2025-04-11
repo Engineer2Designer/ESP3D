@@ -443,7 +443,7 @@
 /* Printer screen
  *  If your printer has a display
  */
-//#define PRINTER_HAS_DISPLAY
+#define PRINTER_HAS_DISPLAY
 
 /* ESP3D screen
  * Screen connected to ESP board
@@ -611,7 +611,9 @@
  */
 // #define ESP_AUTOSTART_SCRIPT "[ESP300]/FS/init.lua\n"
 // #define ESP_AUTOSTART_SCRIPT "M117 Mounting SD;M21"
+ #define ESP_AUTOSTART_SCRIPT "M154 S12;M155 S6"
 // #define ESP_AUTOSTART_SCRIPT_FILE "autoscript.gco"
+
 
 /* Enable lua interpreter
  * Allow to use lua interpreter on ESP3D on ESP32/S2/S3/C3 only
